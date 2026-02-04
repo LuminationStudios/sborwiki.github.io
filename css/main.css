@@ -97,8 +97,9 @@ body {
 /* ───────── MAIN CONTENT ───────── */
 
 .main-content {
-  padding: 40px 6%;
+  padding: 20px 6% 28px;
 }
+
 .main-content--tight {
   padding-top: 10px;
 }
@@ -117,7 +118,7 @@ body {
   text-align: center;
   font-weight: 600;
   letter-spacing: 1px;
-  margin: 28px 0 18px;
+  margin: 14px 0 12px;
   clip-path: polygon(
     14px 0%,
     calc(100% - 14px) 0%,
@@ -159,12 +160,13 @@ body {
 .content-right {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .side-logo {
   width: 200px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
+  align-self: flex-start;
 }
 
 .staff-box {
@@ -172,6 +174,7 @@ body {
   background: rgba(120, 120, 120, 0.65);
   padding: 16px 18px;
   border-left: 3px solid rgba(255, 255, 255, 0.15);
+  border-top: 2px solid rgba(255, 255, 255, 0.08);
 }
 
 .staff-title {
@@ -204,7 +207,7 @@ body {
 .info-box {
   background: rgba(20, 40, 50, 0.65);
   padding: 22px 28px;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 
 .info-box ul {
