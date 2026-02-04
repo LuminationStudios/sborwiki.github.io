@@ -49,7 +49,7 @@ body {
 .hero {
   position: relative;
   height: 520px;
-  background-image: url("background.jpg");
+  background-image: url("background.png");
   background-size: cover;
   background-position: center;
   display: flex;
