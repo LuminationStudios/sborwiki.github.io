@@ -92,3 +92,82 @@ body {
   letter-spacing: 1px;
   background: rgba(0, 0, 0, 0.45);
 }
+
+/* ───────── MAIN CONTENT ───────── */
+
+.main-content {
+  padding: 40px 6%;
+  color: #e6f7ff;
+}
+
+.page-banner {
+  background: rgba(110, 110, 110, 0.65);
+  padding: 10px 18px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+}
+
+.page-intro {
+  text-align: center;
+  opacity: 0.85;
+  margin-bottom: 36px;
+  font-size: 14px;
+}
+
+/* ───────── GRID LAYOUT ───────── */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 48px;
+}
+
+/* ───────── LEFT TEXT ───────── */
+
+.content-left ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.content-left li {
+  margin-bottom: 22px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* ───────── RIGHT PANEL ───────── */
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-logo {
+  width: 200px;
+  margin-bottom: 18px;
+}
+
+.staff-box {
+  width: 100%;
+  background: rgba(120, 120, 120, 0.65);
+  padding: 14px;
+}
+
+.staff-title {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.staff-box ul {
+  list-style: disc;
+  padding-left: 18px;
+}
+
+.staff-box li {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
