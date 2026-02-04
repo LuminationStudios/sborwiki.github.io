@@ -1,120 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
-  background: #0b1d24;
-  color: white;
+  background: #0b1f2a;
+  color: #e6f7ff;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* ─── Top Bar ───────────────────────── */
+/* ───────── HEADER ───────── */
 
-.topbar {
-  height: 60px;
-  padding: 0 24px;
+.wiki-header {
+  height: 64px;
+  padding: 0 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(10, 40, 55, 0.9);
+  background: rgba(20, 55, 75, 0.9);
 }
 
-.topbar .logo {
+.header-left {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-weight: 600;
 }
 
-.topbar img {
+.site-logo {
   width: 36px;
   height: 36px;
 }
 
-.topbar nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #cfefff;
-  font-size: 14px;
+.site-title {
+  font-weight: 600;
+  font-size: 16px;
 }
 
-.topbar nav a:hover {
-  color: #ffffff;
+.header-nav span {
+  margin-left: 22px;
+  font-size: 13px;
+  letter-spacing: 0.6px;
+  opacity: 0.85;
 }
 
-/* ─── Hero Section ──────────────────── */
+/* ───────── HERO ───────── */
 
 .hero {
   position: relative;
   height: 520px;
-  background-image: url("background.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background: url("background.png") center / cover no-repeat;
 }
 
-.overlay {
+.hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 40, 55, 0.7),
-    rgba(10, 40, 55, 0.85)
-  );
+  background: rgba(10, 30, 40, 0.72);
 }
 
-.hero-content {
+.hero-inner {
   position: relative;
-  text-align: center;
-  z-index: 1;
-}
-
-.jp-title {
-  font-size: 32px;
-  letter-spacing: 2px;
-  color: #bdf2ff;
-  margin-bottom: 16px;
-}
-
-/* ─── Logo Text ─────────────────────── */
-
-.main-logo {
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
 }
 
-.sword {
-  font-size: 48px;
-}
-
-.main-logo .small {
-  font-size: 20px;
+.jp-text {
+  font-size: 30px;
   letter-spacing: 2px;
-  color: #d7f7ff;
+  margin-bottom: 14px;
+  color: #bfefff;
 }
 
-.main-logo .big {
-  font-size: 48px;
+/* ───────── LOGO TEXT ───────── */
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.sword-line {
+  width: 140px;
+  height: 6px;
+  background: linear-gradient(to right, transparent, #c6f3ff, transparent);
+}
+
+.logo-text {
+  text-align: center;
+}
+
+.logo-text .upper {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #dbf8ff;
+}
+
+.logo-text .lower {
+  font-size: 52px;
   font-weight: 800;
-  letter-spacing: 3px;
-  color: #9feaff;
+  letter-spacing: 4px;
+  color: #a6ecff;
+  margin-top: -6px;
 }
 
-/* ─── Welcome Bar ───────────────────── */
+/* ───────── WELCOME BAR ───────── */
 
-.welcome-bar {
+.welcome {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 12px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.4);
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.45);
 }
